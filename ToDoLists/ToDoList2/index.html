@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>✨To Do List🎀</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="dark-clair">
+      <button id="dark-mode" onclick="DarkMode()">
+        <img src="images/dark-mode.png" width="40rem" />
+      </button>
+      <button id="clair-mode" onclick="ClairMode()">
+        <img src="images/clair-mode-48.png" width="40rem" />
+      </button>
+    </div>
+    <div class="todo-list" id="todo-list">
+      <h1>To Do List<img src="images/todolist.png" /></h1>
+
+      <div class="adding">
+        <input
+          type="text"
+          placeholder="Entrez votre tâche ici"
+          id="input-box"
+        />
+        <button onclick="AddingTask()" id="add">Ajouter</button>
+      </div>
+      <ul id="tasks-box"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

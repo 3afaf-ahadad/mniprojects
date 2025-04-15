@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #d5c0c0;
+    font-family: 'Outfit', sans-serif;
+}
+
+.todo-list {
+    background: linear-gradient(120deg, #ffc0a7, #ffffff);
+    width: 100%;
+    max-width: 500px;
+    padding: 40px 30px 70px;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+.todo-list h1 {
+    font-size: 2.4rem;
+    color: #fff;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-list img{
+    width: 40px;
+    margin-left: 10px;
+}
+
+.adding {
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.adding input {
+    font-size: 1rem;
+    width: 80%;
+    padding: .8rem;
+    border: none;
+    outline: none;
+    border-radius: 5rem 0  0 5rem;
+}
+
+.adding button {
+    width: 20%;
+    padding: .9rem;
+    border: none;
+    outline: none;
+    border-radius: 0 5rem 5rem 0;
+    background-color: #c09e9e;
+    color: #fff;
+    cursor: pointer;
+}
+
+.adding button:active{
+    background-color: hsl(0, 0%, 50%);
+}
+
+ul li {
+    list-style-type: none;
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 1rem .4rem .2rem 3rem;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: " ";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: .4rem;
+    left: .4rem;
+     
+}
+
+.checked {
+    text-decoration: line-through;
+    color: hsl(0, 0%, 60%);
+}
+
+.checked::before {
+    background-image: url(images/checked.png);
+}
+
+span {
+    position: absolute;
+    background-color: rgba(52, 52, 52, 0.251);
+    top: 1.3rem;
+    right: 1.5rem;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: .4rem;
+}
+
+span:active {
+    background-color: rgba(115, 114, 114, 0.5);
+}
+
+.dark-clair {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 0 0;
+    gap: 1rem;
+    width: 50%;
+
+}
+
+.dark-clair button {
+    width: 5rem;
+    height: 5rem;
+    border: none;
+    border-radius: 10rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.dark-clair button:hover{
+    background-color: hsla(0, 0%, 50%, 0.16);
+}
+
+.dark-clair button:active{
+    animation: click 0.2s ease-in-out;
+    background-color: hsla(0, 0%, 100%, 0.385);
+}
+
+@keyframes click {
+    0% {
+        transform:scale(1);
+    }
+    100% {
+        transform:scale(0.9);
+    }
+}

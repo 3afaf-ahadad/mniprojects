@@ -7,6 +7,7 @@
 - `Project 2`: Improved version with extra features like:
   - Filtering search
   - Local storage
+  - A Dark/Light mode
 
 ## 📂 Tech Stack
 - HTML

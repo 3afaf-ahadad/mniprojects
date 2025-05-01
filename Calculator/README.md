@@ -9,7 +9,13 @@ Lightweight and under 20 lines of JS — perfect for beginners!
 - Basic arithmetic: Add, subtract, multiply, divide
 - Clean UI with simple styling
 - Instant results on button click
+
   
+###      --------------------------🎀------------------------------
+
+## 📷 Preview
+![Calculator Screenshot](image.png)
+
 ###      --------------------------🎀------------------------------
 
 ## 📂 Tech Stack

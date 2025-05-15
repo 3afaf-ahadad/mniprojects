@@ -21,7 +21,6 @@ Two versions of a to-do list app:
 - HTML
 - CSS
 - JavaScript
-- Bootstrap
 
 ---
 
